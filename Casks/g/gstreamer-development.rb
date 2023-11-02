@@ -36,6 +36,8 @@ cask "gstreamer-development" do
     "org.freedesktop.gstreamer.universal.gstreamer-1.0-visualizers-devel",
   ]
 
+  zap trash "/Library/Frameworks/GStreamer.framework"
+
   caveats <<~EOS
     This cask installs the GStreamer.framework development tools into /Library/Frameworks/
 
